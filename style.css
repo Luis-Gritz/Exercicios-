@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.calculadora{
+	position: relative;
+	top: 80px;
+}
+
+.numero{
+    font-size: 30px;
+    font-family: Arial,Helvetica;
+    color: white;
+    border: 0px;
+    background:rgba(0, 81, 255, 0.89);
+    width: 80px;
+    height: 80px;
+}
+
+.sinal{
+    font-size: 40px;
+    font-family: Arial,Helvetica;
+    color: white;
+    border: 0px;
+    background:rgba(0, 0, 255, 0.733);
+    width: 80px;
+    height: 80px;
+}
+
+.acao{
+    font-size: 30px;
+    font-family: Arial,Helvetica;
+    color: white;
+    border: 0px;
+    background:rgba(0, 0, 255, 0.877);
+    width: 80px;
+    height: 80px;
+}
+
+.visor{
+	font-size: 40px;
+	font-family: Arial,Helvetica;
+	color: white;
+	border: 0px;
+	background: rgb(128, 128, 128);
+	width: 325.8px;
+    height: 70px;
+    text-align: right;
+}
+
+.visor2{
+    letter-spacing: 5px;
+	font-size: 20px;
+	font-family: Arial,Helvetica;
+	color: white;
+	border: 0px;
+	background:rgb(128, 128, 128);
+	width: 325.8px;
+    height: 22px;
+    text-align: right;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario Contatos</title>
+</head>
+<body>
+<h1>Dados para Cadastro</h1>
+
+    <form name="F_aula" method="post" action="recebe.html">
+        <fieldset>
+<legend>Dados Pessoais</legend>
+           <label>NOME:</label></br>
+           <input type="text" name"F_nome" size="60" maxlength="60"/><br></br>
+           <label>TELEFONE:</label></br>
+           <input type="text" name"F_telefone" size="60" maxlength="60"/><br></br>
+           <label>EMAIL:</label></br>
+           <input type="text" name"F_email" size="60" maxlength="60"/><br></br>
+    </fieldset>
+    <fieldset>
+        <legend>Informações Complementares</legend>
+            <label>MENSAGEM:</label></br>
+            <textarea name="F_Mensagem" cols="45" rows="5"></textarea>
+    </fieldset>
+           <br><br>
+           <input type="submit" value="ENVIAR"/>
+           <input type="reset" value="LIMPAR"/>
+    </form>
+    
+</body>
+</html>
