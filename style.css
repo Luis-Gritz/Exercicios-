@@ -8,7 +8,7 @@
 	top: 80px;
 }
 
-.numero{
+.numeros{
     font-size: 30px;
     font-family: Arial,Helvetica;
     color: white;
@@ -18,7 +18,7 @@
     height: 80px;
 }
 
-.sinal{
+.operacoes{
     font-size: 40px;
     font-family: Arial,Helvetica;
     color: white;
@@ -28,7 +28,7 @@
     height: 80px;
 }
 
-.acao{
+.botoens{
     font-size: 30px;
     font-family: Arial,Helvetica;
     color: white;
@@ -38,11 +38,11 @@
     height: 80px;
 }
 
-.visor{
+.visor1{
 	font-size: 40px;
 	font-family: Arial,Helvetica;
 	color: white;
-	border: 0px;
+	border: 1px;
 	background: rgb(128, 128, 128);
 	width: 325.8px;
     height: 70px;
@@ -54,7 +54,7 @@
 	font-size: 20px;
 	font-family: Arial,Helvetica;
 	color: white;
-	border: 0px;
+	border: 1px;
 	background:rgb(128, 128, 128);
 	width: 325.8px;
     height: 22px;
