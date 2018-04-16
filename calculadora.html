@@ -9,6 +9,62 @@
     <title>Calculadora</title>
 
 </head>
+
+<script language="javascript">
+        op = "";
+        num1 = "";
+        num2 = "";
+        resp = "";
+        function mostra(x) {
+            document.formulario.calculo.value += x;
+        }
+        function coleta(y) {
+            if (op == "") {
+                op = y;
+                num1 = document.formulario.calculo.value;
+                document.formulario.calculo2.value = num1 + op;
+                document.formulario.calculo.value = '';
+            }
+            else {
+                alert("Não é possível realizar duas operacões");
+            }
+        }
+        function calcula() {
+            if (op == "") {
+                alert("Selecione uma operação");
+            }
+            else {
+                num2 = document.formulario.calculo.value;
+                resp = num1 + op + num2;
+                document.formulario.calculo.value = eval(resp);
+                document.formulario.calculo2.value = "";
+            }
+        }
+        function novocalculo() {
+            num1 = "";
+            num2 = "";
+            op = "";
+            resp = "";
+            document.formulario.calculo.value = "";
+        }
+        function limpa() {
+            document.formulario.calculo.value = "";
+            document.formulario.calculo2.value = "";
+        }
+        function apagaValor() {
+            valorAtual = calculo.value;
+            valorNovo = valorAtual.substring(0, valorAtual.length - 1);
+            calculo.value = valorNovo;
+        }
+        function trocaSinal() {
+            if (calculo != "") {
+                valor = calculo.value;
+                calculo.value = valor * -1;
+            }
+        }
+    </script>
+    
+<body>
 <center>
 <div class="calculadora"></div>
 <table>
@@ -19,72 +75,72 @@
 </form>
 <tr>
     <td>
-    <input type="button" value="CE" class="botoens" />
+    <input type="button" value="CE" class="botoens" onclick="novocalculo();"/>
     </td>
     <td>
-    <input type="button" value="C" class="botoens" />
+    <input type="button" value="C" class="botoens" onclick="limpa();" />
 </td>
 <td>
-    <input type="button" value="&lArr;" class="botoens" />
+    <input type="button" value="&lArr;" class="botoens" onclick="apagarValor();"/>
 </td>
 <td>
-    <input type="button" value="/" class="operacoes" />
+    <input type="button" value="/" class="operacoes" onclick="coleta('/');"/>
 </td>
 </tr>
 <tr>
     <td>
-    <input type="button" value="7" class="numeros" />
+    <input type="button" value="7" class="numeros"onclick="mostra('7');" />
 </td>
 <td>
-    <input type="button" value="8" class="numeros" />
+    <input type="button" value="8" class="numeros" onclick="mostra('8');"/>
 </td>
 <td>
-    <input type="button" value="9" class="numeros" />
+    <input type="button" value="9" class="numeros" onclick="mostra('9');"/>
 </td>
 <td>
-    <input type="button" value="*" class="operacoes" />
+    <input type="button" value="*" class="operacoes" onclick="colete('*');"/>
 </td>
 </tr>
 <tr>
     <td>
-    <input type="button" value="4" class="numeros" />
+    <input type="button" value="4" class="numeros" onclick="mostra('4');"/>
 </td>
 <td>
-    <input type="button" value="5" class="numeros" />
+    <input type="button" value="5" class="numeros" onclick="mostra('5');"/>
 </td>
 <td>
-    <input type="button" value="6" class="numeros" />
+    <input type="button" value="6" class="numeros" onclick="mostra('6');"/>
 </td>
 <td>
-    <input type="button" value="-" class="operacoes" />
+    <input type="button" value="-" class="operacoes" onclick="colete('-');"/>
 </td>
 </tr>
 <tr>
     <td>
-    <input type="button" value="3" class="numeros" />
+    <input type="button" value="3" class="numeros" onclick="mostra('3');"/>
 </td>
 <td>
-    <input type="button" value="2" class="numeros" />
+    <input type="button" value="2" class="numeros" onclick="mostra('2');"/>
 </td>
 <td>
-    <input type="button" value="1" class="numeros" />
+    <input type="button" value="1" class="numeros" onclick="mostra('1');"/>
 </td>
 <td>
-    <input type="button" value="+" class="operacoes" />
+    <input type="button" value="+" class="operacoes" onclick="colete('+');"/>
 </td>
 </tr>
 <tr>
 <td>
-    <input type="button" value="+-" id="btnInverter" class="botoens" />
+    <input type="button" value="+-" id="btnInverter" class="botoens" onclick="trocaSinal();"/>
 </td>
 <td>
-    <input type="button" value="0" class="numeros" />
+    <input type="button" value="0" class="numeros" onclick="mostra('0');"/>
 </td>
 <td>
-    <input type="button" value="&comma;" class="botoens" />
+    <input type="button" value="&comma;" class="botoens" onclick="mostra('.');"/>
 </td>
 <td>
-    <input type="button" value="&equals;" class="botoens" />
+    <input type="button" value="&equals;" class="botoens" onclick="calcula();"/>
 </td>
 </tr>
 <tr>
@@ -94,5 +150,5 @@
 </table>
 </div>
 </center>
-<body>
+</body>
     </html>
