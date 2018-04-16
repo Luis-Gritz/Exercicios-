@@ -1,45 +1,98 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Calculadora</title>
+
 </head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" type="text/css" href="style.css">
-
-<title>Calculadora</title>
-<form>
-<input type="text" id="txtOperacao" readonly="readonly" disabled="disabled" />
+<center>
+<div class="calculadora"></div>
+<table>
+<form name="formulario">
+<input class="visor1" type="text" id="txtOperacao" readonly="readonly" disabled="disabled" />
 <br/>
-<input type="text" id="txtResult" readonly="readonly" disabled="disabled" placeholder="informe o valor aqui" />
+<input class="visor2" type="text" id="txtResult" readonly="readonly" disabled="disabled" placeholder="INFORME O VALOR" />
 </form>
-<br />
-<input type="button" value="CE" />
-<input type="button" value="C" />
-<input type="button" value="&lArr;" />
-<input type="button" value="/" class="operacoes" />
-<br />
-<input type="button" value="7" class="numeros" />
-<input type="button" value="8" class="numeros" />
-<input type="button" value="9" class="numeros" />
-<input type="button" value="*" class="operacoes" />
-<br />
-<input type="button" value="4" class="numeros" />
-<input type="button" value="5" class="numeros" />
-<input type="button" value="6" class="numeros" />
-<input type="button" value="-" class="operacoes" />
-<br />
-<input type="button" value="3" class="numeros" />
-<input type="button" value="2" class="numeros" />
-<input type="button" value="1" class="numeros" />
-<input type="button" value="+" class="operacoes" />
-<br />
-<input type="button" value="+-" id="btnInverter" />
-<input type="button" value="0" class="numeros" />
-<input type="button" value="&comma;" class="numeros" />
-<input type="button" value="&equals;" class="executar" />
+<tr>
+    <td>
+    <input type="button" value="CE" class="botoens" />
+    </td>
+    <td>
+    <input type="button" value="C" class="botoens" />
+</td>
+<td>
+    <input type="button" value="&lArr;" class="botoens" />
+</td>
+<td>
+    <input type="button" value="/" class="operacoes" />
+</td>
+</tr>
+<tr>
+    <td>
+    <input type="button" value="7" class="numeros" />
+</td>
+<td>
+    <input type="button" value="8" class="numeros" />
+</td>
+<td>
+    <input type="button" value="9" class="numeros" />
+</td>
+<td>
+    <input type="button" value="*" class="operacoes" />
+</td>
+</tr>
+<tr>
+    <td>
+    <input type="button" value="4" class="numeros" />
+</td>
+<td>
+    <input type="button" value="5" class="numeros" />
+</td>
+<td>
+    <input type="button" value="6" class="numeros" />
+</td>
+<td>
+    <input type="button" value="-" class="operacoes" />
+</td>
+</tr>
+<tr>
+    <td>
+    <input type="button" value="3" class="numeros" />
+</td>
+<td>
+    <input type="button" value="2" class="numeros" />
+</td>
+<td>
+    <input type="button" value="1" class="numeros" />
+</td>
+<td>
+    <input type="button" value="+" class="operacoes" />
+</td>
+</tr>
+<tr>
+<td>
+    <input type="button" value="+-" id="btnInverter" class="botoens" />
+</td>
+<td>
+    <input type="button" value="0" class="numeros" />
+</td>
+<td>
+    <input type="button" value="&comma;" class="botoens" />
+</td>
+<td>
+    <input type="button" value="&equals;" class="botoens" />
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+</table>
+</div>
+</center>
 <body>
-    
-</body>
-
-</html>
+    </html>
