@@ -69,9 +69,9 @@
 <div class="calculadora"></div>
 <table>
 <form name="formulario">
-<input class="visor1" type="text" id="txtOperacao" readonly="readonly" disabled="disabled" />
+<input class="visor1" type="text" id="calculo2" readonly="readonly" disabled="disabled" />
 <br/>
-<input class="visor2" type="text" id="txtResult" readonly="readonly" disabled="disabled" placeholder="INFORME O VALOR" />
+<input class="visor2" type="text" id="calculo" readonly="readonly" disabled="disabled" placeholder="INFORME O VALOR" />
 </form>
 <tr>
     <td>
@@ -81,7 +81,7 @@
     <input type="button" value="C" class="botoens" onclick="limpa();" />
 </td>
 <td>
-    <input type="button" value="&lArr;" class="botoens" onclick="apagarValor();"/>
+    <input type="button" value="&lArr;" class="botoens" onclick="apagaValor();"/>
 </td>
 <td>
     <input type="button" value="/" class="operacoes" onclick="coleta('/');"/>
@@ -98,7 +98,7 @@
     <input type="button" value="9" class="numeros" onclick="mostra('9');"/>
 </td>
 <td>
-    <input type="button" value="*" class="operacoes" onclick="colete('*');"/>
+    <input type="button" value="*" class="operacoes" onclick="coleta('*');"/>
 </td>
 </tr>
 <tr>
@@ -112,7 +112,7 @@
     <input type="button" value="6" class="numeros" onclick="mostra('6');"/>
 </td>
 <td>
-    <input type="button" value="-" class="operacoes" onclick="colete('-');"/>
+    <input type="button" value="-" class="operacoes" onclick="coleta('-');"/>
 </td>
 </tr>
 <tr>
@@ -126,7 +126,7 @@
     <input type="button" value="1" class="numeros" onclick="mostra('1');"/>
 </td>
 <td>
-    <input type="button" value="+" class="operacoes" onclick="colete('+');"/>
+    <input type="button" value="+" class="operacoes" onclick="coleta('+');"/>
 </td>
 </tr>
 <tr>
