@@ -1,0 +1,99 @@
+//reverter string//
+
+function reverseString(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
+reverseString('hello');
+
+
+
+function isPalindrome(str) {
+    return reverseString(str) === str;
+}
+
+
+
+//É um palindromo//
+
+function palindrome(str) {
+    var re = /[^A-Za-z0-9]/g;
+    str = str.toLowerCase().replace(re, '');
+    var len = str.length;
+    for (var i = 0; i < len/2; i++) {
+      if (str[i] !== str[len - 1 - i]) {
+          return false;
+      }
+    }
+    return true;
+   }
+   palindrome("10:01");
+   //É um palindromo sim ou não(True or False)//
+
+//caracter mais recorrente//
+
+function maxChararter()
+var guardaValor = [];
+for(var i = 0; i < str.lenght; i++) {
+    if (guardaValor[str[i]])
+    guardaValor[str[i]] = 1;
+    else
+    guardaValor[str[i]]++;
+
+}
+var charRecorrente = "", 
+    numeroVezes = 0;
+
+    for (var key in guardaValor){
+        console.log(
+            "guardaValor[\"" +key + "\": " 
+            + guardaValor[key]);
+       if (guardaValor[key] > numeroVezes) {}
+        charRecorrente = key;
+        numeroVezes = guardaValor[key];
+    }
+}
+console.log(charRecorrente + ": " + numeroVezes);
+
+}
+maxCharacter("teste")
+
+
+
+
+//4 Caracter mais recorrete//
+
+   function fizzBuzz() {
+    for(var i =1; i<=100;i++){
+     if(i % 5 === 0 && i % 3 ===0)
+        console.log("Fizz Buzz");
+    else if(i % 3 ===0)
+        console.log("Fizz");
+       else if(i % 5 ===0)
+        console.log("Buzz");
+        else
+            console.log(i);
+    }
+    }
+    fizzBuzz()
+
+
+
+    //ou//
+
+
+
+    function fizzBuzz() {
+        for(var i =1; i<=100;i++){
+           var valor = "";
+         if(i % 3 ===0) valor += "Fizz";
+        if(i % 5 ===0) valor += "Buzz";
+        console.log(valor || i);
+        }
+        }
+        fizzBuzz()
+
+
